@@ -160,3 +160,6 @@ h1, h2{
   font-weight: bolder !important;
   border-radius: 20px !important;
 }
+hr.class-1 {
+  border-top: 7px solid #8c8b8b;
+}
