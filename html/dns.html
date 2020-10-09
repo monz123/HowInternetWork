@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -39,20 +39,46 @@
         </div>
     </div>
 </nav>
+<br/>
+<br/>
+<br/>
+<br/>
 <div id="section1" class="container-fluid">
-<h1>ICANN</h1>
-<hr class="class-1"/>
-<div class="row">
-    <div class="col-sm-5">
-        <img src="../images/icann.jpg" alt="link" height="300" width="500">
-    </div>
-    <div class="col-sm-6">
-        <p>What is ICANN?
-            The Internet Corporation for Assigned Names and Numbers (ICANN) is an internationally organized, non-profit corporation that has responsibility for Internet Protocol (IP) address space allocation, protocol identifier assignment, generic (gTLD) and country code (ccTLD) Top-Level Domain name system management, and root server system management functions. These services were originally performed under U.S. Government contract by the Internet Assigned Numbers Authority (IANA) and other entities. ICANN now performs the IANA function.The global Internet community working together to promote the stability and integrity of the Internet.
+    <h1>Domain Name Server</h1>
+    <div class="row">
 
-            As a private-public partnership, ICANN is dedicated to preserving the operational stability of the Internet; to promoting competition; to achieving broad representation of global Internet communities; and to developing policy appropriate to its mission through bottom-up, consensus-based processes.</p>
+        <div class="col-sm-11">
+    <hr class="class-1"/>
+        </div>
     </div>
-</div>
+    <div class="row">
+
+        <div class="col-sm-5">
+
+            <p class="text-justify"> A Domain Name System is a database that translates the user-friendly host names that we use to browse the Internet (e.g. plus.net) into a numerical format understood by computers, known as IP addresses (e.g. 192.168.124.1.).
+
+                DNS is an integral part of how the internet works, as it allows users and hosts to utilise more memorable DNS names rather than having to use a website's IP address to access a website.</p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/dns2.png" height="400px" width="500px">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/howdomainswork.png" height="400px" width="500px">
+        </div>
+        <div class="col-sm-5">
+           <p class="text-justify"> When a user wants to access a webpage, they enter the address (or DNS name) into their browser's address bar. This information is then sent in the form of a 'DNS query' to their Internet Service Provider's (ISP) DNS servers. Every ISP has a database of DNS names and their corresponding IP addresses. If a user's initial query can be answered using this directory, an 'authoritative' answer is sent to the user's computer so they can connect with the website.
+
+            If the ISP directory is unable to answer the initial DNS query authoritatively, then its next step would be to check its cache. A server's cache holds a record of all other previous queries. If it can answer a user using information from the cache, then it will still answer but with a 'non-authoritative' answer. This means that the information you're being supplied with isn't directly from your ISP's directory, but from a third party.
+
+               If your query still can't be answered, then the DNS query process will use recursion. This is when your ISP's DNS survey uses the information it has on other authoritative servers in its root hint files to contact and get the information you need. Once an ISP has requested this information, it is sent to a user's computer, where a connection is formed. The ISP server then stores that information in its cache which can be then accessed for future queries.</p>
+        </div>
+    </div>
+<br/>
+    <br/>
 </div>
 </body>
 </html>
