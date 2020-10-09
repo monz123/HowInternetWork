@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -22,13 +22,15 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#section1">Domain Names and ICANN</a></li>
-                    <li><a href="#section2">IP Addresses, Packets and Routing</a></li>
-                    <li><a href="#section3">DNS</a></li>
-                    <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Protocols <span class="caret"></span></a>
+
+                    <li><a href="./domainNamesICANN.html">Domain Names and ICANN</a></li>
+                    <li><a href="./internetRouting.html">IP Addresses, Packets and Routing</a></li>
+                    <li><a href="./dns.html">DNS</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Protocols <span class="caret"></span></a>
+
                         <ul class="dropdown-menu">
-                            <li><a href="#section41">HTTP</a></li>
-                            <li><a href="#section42">HTTPS</a></li>
+                            <li><a href="./httpProtocol.html#section1">HTTP</a></li>
+                            <li><a href="./httpProtocol.html#section2">HTTPS</a></li>
                         </ul>
                     </li>
                     <li><a href="./index.html">History of Internet</a></li>
@@ -37,5 +39,142 @@
         </div>
     </div>
 </nav>
+<br/>
+<br/>
+<br/>
+<br/>
+<div  class="container-fluid">
+    <h1 id="section1">HTTP</h1>
+    <div class="row">
+        <div class="col-sm-10">
+            <hr class="class-1"/>
+            <p class="text-justify">The Hypertext Transfer Protocol is an application protocol for distributed, collaborative, hypermedia information systems that allows users to communicate data on the World Wide Web.</p>
+            <p class="text-justify">HTTP was invented alongside HTML to create the first interactive, text-based web browser: the original World Wide Web. Today, the protocol remains one of the primary means of using the Internet.</p>
+            <p class="text-justify">As a request-response protocol, HTTP gives users a way to interact with web resources such as HTML files by transmitting hypertext messages between clients and servers. HTTP clients generally use Transmission Control Protocol (TCP) connections to communicate with servers.
+            </p>
+            <p class="text-justify">   HTTP utilizes specific request methods in order to perform various tasks:
+            <ul>
+                <li>GET requests a specific resource in its entirety</li>
+                <li>HEAD requests a specific resource without the body content</li>
+                <li>POST adds content, messages, or data to a new page under an existing web resource</li>
+                <li>PUT directly modifies an existing web resource or creates a new URI if need be</li>
+                <li>DELETE gets rid of a specified resource</li>
+                <li>TRACE shows users any changes or additions made to a web resource</li>
+                <li>OPTIONS shows users which HTTP methods are available for a specific URL</li>
+                <li>CONNECT converts the request connection to a transparent TCP/IP tunnel</li>
+                <li>PATCH partially modifies a web resource</li>
+                <li>All HTTP servers use the GET and HEAD methods, but not all support the rest of these request methods.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <p class="text-justify">
+                Whenever you visit a page on the web, your computer uses the Hypertext Transfer Protocol (HTTP) to download that page from another computer somewhere on the Internet.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 1: Direct browser to URL
+                When we want to browse the web, we can use many types of computers (like laptops, desktops, and phones), as long as the computer has a browser application installed.
+                The user either types a Uniform Resource Locator (URL) in the browser or follows a link from an already opened page:
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/http1.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 2: Browser looks up IP
+
+                We typically type nice human-friendly URLs into browsers, like "khanacademy.org" and "wikipedia.org". Those domain names map to IP addresses, the true location of the domain's computers. That's handled by the Domain Name System.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/http2.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 3: Browser sends HTTP request
+
+                Once the browser identifies the IP address of the computer hosting the requested URL, it sends an HTTP request.
+                An HTTP request can be as short as two lines of text:
+                GET /index.html HTTP/1.1
+                Host: www.example.com
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/http3.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 4: Host sends back HTTP response
+
+                Once the host computer receives the HTTP request, it sends back a response with both the content and metadata about it.
+                The HTTP response starts similarly to the request:
+                HTTP/1.1 200 OK
+
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/http4.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 5: The browser renders the response
+
+                The browser now has all the information it needs to render the document requested.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/http5.svg">
+        </div>
+    </div>
+        <br/>
+        <br/>
+        <h1 id="section2">HTTPS</h1>
+
+        <div class="row">
+            <div class="col-sm-10">
+                <hr class="class-1"/>
+                <p class="text-justify"> HyperText Transfer Protocol Secure (HTTPS) is an encrypted version of HTTP, which is the main protocol used for transferring data over the World Wide Web.
+                    HTTPS protects the communication between your browser and server from being intercepted and tampered with by attackers. This provides confidentiality, integrity and authentication to the vast majority of today’s WWW traffic.
+
+                    Any website that shows a lock icon in the address bar is using HTTPS.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="jumbotron">
+                    <h4>KEY DIFFERENCE</h4>
+                    <p class="justify-content-sm-evenly"><ul>
+                    <li>HTTP lacks security mechanism to encrypt the data whereas HTTPS provides SSL or TLS Digital Certificate to secure the communication between server and client.</li>
+                    <li>HTTP operates at Application Layer whereas HTTPS operates at Transport Layer.</li>
+                    <li>HTTP by default operates on port 80 whereas HTTPS by default operates on port 443.</li>
+                    <li>HTTP transfers data in plain text while HTTPS transfers data in cipher text (encrypt text).</li>
+                    <li>HTTP is fast as compared to HTTPS because HTTPS consumes computation power to encrypt the communication channel.</li>
+                </ul></p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src="../images/https2.png">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
