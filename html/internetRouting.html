@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,18 +17,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./homePage.html">Home Page</a>
+
         </div>
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
+                    <li><a  href="./homePage.html">Home Page</a></li>
                     <li><a href="./domainNamesICANN.html">Domain Names and ICANN</a></li>
                     <li class="active"><a href="./internetRouting.html">IP Addresses, Packets and Routing</a></li>
                     <li><a href="./dns.html">DNS</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Protocols <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="./httpProtocol.html">HTTP</a></li>
-                            <li><a href="./httpProtocol.html">HTTPS</a></li>
+                            <li><a href="./httpProtocol.html#section1">HTTP</a></li>
+                            <li><a href="./httpProtocol.html#section2">HTTPS</a></li>
                         </ul>
                     </li>
                     <li><a href="./index.html">History of Internet</a></li>
@@ -44,13 +45,19 @@
 <div id="section1" class="container-fluid">
     <h1>IP Addresses</h1>
     <div class="row">
+
+        <div class="col-sm-11">
+            <hr class="class-1"/>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-5">
             <img src="../images/ipaddr1.png" alt="link" height="300" width="500">
         </div>
-        <div class="col-sm-6">
-            <p>Every machine on a network has a unique identifier. Just as you would address a letter to send in the mail, computers use the unique identifier to send data to specific computers on a network. Most networks today, including all computers on the internet, use the TCP/IP protocol as the standard for how to communicate on the network. In the TCP/IP protocol, the unique identifier for a computer is called its IP address.
+        <div class="col-sm-5">
+            <p class="text-justify">Every machine on a network has a unique identifier. Just as you would address a letter to send in the mail, computers use the unique identifier to send data to specific computers on a network. Most networks today, including all computers on the internet, use the TCP/IP protocol as the standard for how to communicate on the network. In the TCP/IP protocol, the unique identifier for a computer is called its IP address.</p>
 
-                There are two standards for IP addresses: IP Version 4 (IPv4) and IP Version 6 (IPv6). All computers with IP addresses have an IPv4 address, and most use the new IPv6 address system as well.</p>
+            <p class="text-justify"><ul>There are two standards for IP addresses: <li>IP Version 4 (IPv4) </li> <li> IP Version 6 (IPv6)</li> </ul> </p><p class="text-justify">All computers with IP addresses have an IPv4 address, and most use the new IPv6 address system as well.</p>
         </div>
     </div>
     <br/>
@@ -64,52 +71,168 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-10">
-            IPv4 uses 32 binary bits to create a single unique address on the network. An IPv4 address is expressed by four numbers separated by dots. Each number is the decimal (base-10) representation for an eight-digit binary (base-2) number, also called an octet. For example: 216.27.61.137
-            IPv6 uses 128 binary bits to create a single unique address on the network. An IPv6 address is expressed by eight groups of hexadecimal (base-16) numbers separated by colons, as in 2001:cdba:0000:0000:0000:0000:3257:9652. Groups of numbers that contain all zeros are often omitted to save space, leaving a colon separator to mark the gap (as in 2001:cdba::3257:9652).
+        <div class="col-sm-5">
+            <p class="text-justify">
+                IPv4 uses 32 binary bits to create a single unique address on the network. An IPv4 address is expressed by four numbers separated by dots. Each number is the decimal (base-10) representation for an eight-digit binary (base-2) number, also called an octet. For example: 216.27.61.137
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <p class="text-justify">
+                IPv6 uses 128 binary bits to create a single unique address on the network. An IPv6 address is expressed by eight groups of hexadecimal (base-16) numbers separated by colons, as in 2001:cdba:0000:0000:0000:0000:3257:9652. Groups of numbers that contain all zeros are often omitted to save space, leaving a colon separator to mark the gap (as in 2001:cdba::3257:9652).
+            </p>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-10">
-            <p>some numbers in that range are reserved for specific purposes on TCP/IP networks. These reservations are recognized by the authority on TCP/IP addressing, the internet Assigned Numbers Authority (IANA). Four specific reservations include the following:
-
-                0.0.0.0: This represents the default network, which is the abstract concept of just being connected to a TCP/IP network.
-                255.255.255.255: This address is reserved for network broadcasts, or messages that should go to all computers on the network.
-                127.0.0.1: This is called the loopback address, meaning your computer's way of identifying itself, whether or not it has an assigned IP address.
-                169.254.0.1 to 169.254.255.254: This is the Automatic Private IP Addressing (APIPA) range of addresses assigned automatically when a computer's unsuccessful getting an address from a DHCP server.</p>
-            <p>FINDING YOUR IP ADDRESS
-                In Windows, search for "cmd" (without the quotes) using Windows search and hit Enter. In the resulting pop-up box, type "ipconfig" (no quote marks). For Macs, go to System Preferences, select Network, and you should see it. For mobile phone IP addresses, go to Settings, then WiFi and to the network you're on. The IP address might be found under "Advanced" or "(i)" depending on the type of phone you have.</p>
+            <p class="text-justify">Some numbers in that range are reserved for specific purposes on TCP/IP networks. These reservations are recognized by the authority on TCP/IP addressing, the internet Assigned Numbers Authority (IANA).</p>
+            <p class="text-justify">
+                Four specific reservations include the following:
+            <ul>
+                <li> <b>0.0.0.0: </b> This represents the default network, which is the abstract concept of just being connected to a TCP/IP network.</li>
+                <li> <b> 255.255.255.255:</b> This address is reserved for network broadcasts, or messages that should go to all computers on the network.</li>
+                <li> <b>   127.0.0.1:</b> This is called the loopback address, meaning your computer's way of identifying itself, whether or not it has an assigned IP address.</li>
+                <li><b> 169.254.0.1 to 169.254.255.254: </b> This is the Automatic Private IP Addressing (APIPA) range of addresses assigned automatically when a computer's unsuccessful getting an address from a DHCP server.</li>
+            </ul>
+            </p>
+            <div class="jumbotron">
+                <h4>FINDING YOUR IP ADDRESS</h4>
+                <p>In Windows, search for "cmd" (without the quotes) using Windows search and hit Enter. In the resulting pop-up box, type "ipconfig" (no quote marks). For Macs, go to System Preferences, select Network, and you should see it. For mobile phone IP addresses, go to Settings, then WiFi and to the network you're on. The IP address might be found under "Advanced" or "(i)" depending on the type of phone you have.</p>
+            </div>
         </div>
     </div>
     <h1>Packets</h1>
-    <p>It turns out that everything you do on the Internet involves packets. For example, every Web page that you receive comes as a series of packets, and every e-mail you send leaves as a series of packets. Networks that ship data around in small packets are called packet switched networks.</p>
-    <p>Each packet carries the information that will help it get to its destination -- the sender's IP address, the intended receiver's IP address, something that tells the network how many packets this e-mail message has been broken into and the number of this particular packet. The packets carry the data in the protocols that the Internet uses: Transmission Control Protocol/Internet Protocol (TCP/IP). Each packet contains part of the body of your message. A typical packet contains perhaps 1,000 or 1,500 bytes.</p>
+    <div class="row">
+
+        <div class="col-sm-11">
+            <hr class="class-1"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                It turns out that everything you do on the Internet involves packets. For example, every Web page that you receive comes as a series of packets, and every e-mail you send leaves as a series of packets. Networks that ship data around in small packets are called packet switched networks. Each packet carries the information that will help it get to its destination.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/packet2.png" alt="link" height="300" width="500">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/packet1.gif" alt="link" height="500" width="600">
+        </div>
+        <div class="col-sm-5">
+            <p class="text-justify">
+                The Network Packet Structure
+                <ol>
+                    <h5><li>Header</li></h5>
+            <p>The header contains instructions about the data carried by the packet.
+                These instructions may include:</p>
+            <ul>
+                <li>Length of packet (some networks have fixed-length packets, while others rely on the header to contain this information)</li>
+                <li>Synchronization (a few bits that help the packet match up to the network)</li>
+                <li>Packet number (which packet this is in a sequence of packets)</li>
+                <li>Protocol (on networks that carry multiple types of information, the protocol defines what type of packet is being transmitted: e-mail, Web page, streaming video)</li>
+                <li>Destination address (where the packet is going)</li>
+                <li>Originating address (where the packet came from)</li>
+            </ul>
+
+            <h5><li>Payload </li></h5>
+            <p>Also called the body or data of a packet. This is the actual data that the packet is delivering to the destination.</p>
+
+            <h5><li>Trailer </li></h5>
+            <p>The trailer, sometimes called the footer, typically contains a couple of bits that tell the receiving device that it has reached the end of the packet. It may also have some type of error checking. The most common error checking used in packets is Cyclic Redundancy Check (CRC). sender's IP address, the intended receiver's IP address, something that tells the network how many packets this e-mail message has been broken into and the number of this particular packet. The packets carry the data in the protocols that the Internet uses: Transmission Control Protocol/Internet Protocol (TCP/IP). Each packet contains part of the body of your message. A typical packet contains perhaps 1,000 or 1,500 bytes.</p>
+            </ol>
+            </p>
+        </div>
+
+    </div>
+<br/>
+    <br/>
     <h1>Routing</h1>
-    In the Internet Protocol (IP), computers split messages into packets and those packets hop from router to router on the way to their destination:
+    <div class="row">
 
-    Step 1: Send packet to router
+        <div class="col-sm-11">
+            <hr class="class-1"/>
+        </div>
+    </div>
+    <div class="row">
 
-    Computers send the first packet to the nearest router. A router is a type of computing device used in computer networks that helps move the packets along.
-    Step 2: Router receives packet
+        <div class="col-sm-10">
+    <p>In the Internet Protocol (IP), computers split messages into packets and those packets hop from router to router on the way to their destination:</p>
+    <img src="../images/r1.svg" width="900px" height="500px">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>Step 1: Send packet to router</b></p>
 
-    When the router receives a packet, it looks at its IP header. The most important field is the destination IP address, which tells the router where the packet wants to end up.
-    Step 3: Router forwards packet
+            <p class="text-justify">Computers send the first packet to the nearest router. A router is a type of computing device used in computer networks that helps move the packets along.
 
-    The router has multiple paths it could send a packet along, and its goal is to send the packet to a router that's closer to its final destination.
-    How does it decide? The router has a forwarding table that helps it pick the next path based on the destination IP address. That table does not have a row for every possible IP address; there are
-    2
-    32
-    2
-    32
-    2, start superscript, 32, end superscript possible IP addresses, and that's far too much to store. Instead, the table has rows for IP address prefixes.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/r2.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>Step 2: Router receives packet</b></p>
 
-    P addresses are hierarchical. When two IP addresses start with the same prefix, that often means they're on the same large network,Router forwarding tables take advantage of that fact so that they can store far less information.
-    Once the router locates the most specific row in the table for the destination IP address, it sends the packet along that path.
-    Step 4: Final router forwards message
+            <p class="text-justify">   When the router receives a packet, it looks at its IP header. The most important field is the destination IP address, which tells the router where the packet wants to end up.
 
-    If all goes well, the packet should eventually arrive at a router that knows exactly where to send it.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/r3.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>Step 3: Router forwards packet</b></p>
 
-    The router can now send the message to the destination IP address, which may be a personal computer or a server.
+            <p class="text-justify">The router has multiple paths it could send a packet along, and its goal is to send the packet to a router that's closer to its final destination.
+                How does it decide? The router has a forwarding table that helps it pick the next path based on the destination IP address. That table does not have a row for every possible IP address; there are
+                2
+                32
+                2
+                32
+                2, start superscript, 32, end superscript possible IP addresses, and that's far too much to store. Instead, the table has rows for IP address prefixes.
+
+                P addresses are hierarchical. When two IP addresses start with the same prefix, that often means they're on the same large network,Router forwarding tables take advantage of that fact so that they can store far less information.
+                Once the router locates the most specific row in the table for the destination IP address, it sends the packet along that path.
+
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/r4.svg">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h5>
+                 Step 4: Final router forwards message</h5>
+
+            <p class="text-justify">If all goes well, the packet should eventually arrive at a router that knows exactly where to send it.
+
+                The router can now send the message to the destination IP address, which may be a personal computer or a server.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/r5.svg">
+        </div>
+    </div>
+    <br/>
+    <br/>
 </div>
 </body>
 </html>

@@ -163,3 +163,6 @@ h1, h2{
 hr.class-1 {
   border-top: 7px solid #8c8b8b;
 }
+.container-fluid{
+  padding-left: 50px !important;
+}
